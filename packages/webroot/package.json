@@ -1,0 +1,38 @@
+{
+  "name": "@parcel_lerna_yarn_react/webroot",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Kondal Rao Komaragiri <kondal04@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
+  },
+  "scripts": {
+    "noprestart": "lerna run watch -- stream",
+    "start": "parcel src/index.html",
+    "start:server": "parcel src/index.html",
+    "clean": "rimraf dist .cache",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@parcel_lerna_yarn_react/comp1": "^0.0.0",
+    "@parcel_lerna_yarn_react/comp2": "^0.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "parcel-bundler": "^1.10.3",
+    "rimraf": "^2.6.2"
+  }
+}

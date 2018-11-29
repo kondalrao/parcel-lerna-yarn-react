@@ -1,0 +1,21 @@
+{
+  "name": "parcel_lerna_yarn_react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "status": "oao list",
+    "clean": "rimraf node_modules",
+    "reset": "lerna run clean --stream && lerna clean -y && lerna bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "release": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.5.0",
+    "rimraf": "^2.6.2"
+  }
+}
