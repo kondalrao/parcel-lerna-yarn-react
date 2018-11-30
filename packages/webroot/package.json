@@ -1,5 +1,5 @@
 {
-  "name": "@parcel_lerna_yarn_react/webroot",
+  "name": "webroot",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Kondal Rao Komaragiri <kondal04@gmail.com>",
@@ -24,8 +24,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@parcel_lerna_yarn_react/comp1": "^0.0.0",
-    "@parcel_lerna_yarn_react/comp2": "^0.0.0",
+    "comp1": "^0.0.0",
+    "comp2": "^0.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"

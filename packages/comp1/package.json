@@ -1,5 +1,5 @@
 {
-  "name": "@parcel_lerna_yarn_react/comp1",
+  "name": "@kondal04/comp1",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Kondal Rao Komaragiri <kondal04@gmail.com>",
@@ -18,12 +18,12 @@
     "registry": "https://registry.npmjs.com/"
   },
   "scripts": {
-    "start": "parcel watch lib/* --global @parcel_lerna_yarn_react/comp1",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build lib/* --global @parcel_lerna_yarn_react/comp1",
+    "start": "parcel watch lib/* --global comp1",
+    "prebuild": "rimraf dist .cache",
+    "build": "parcel build lib/* --global @kondal04/comp1",
     "clean": "rimraf dist .cache",
     "mypublish": "npm publish --scope kondal04",
-    "unpublish": "npm unpublish @kondal04/comp1@0.0.2",
+    "unpublish": "npm unpublish @kondal04/comp1@0.0.0",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
